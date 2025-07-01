@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: lightblue;
+}
+
+/* Header Styling */
+header {
+  background-color: #4caf50;
+  color: white;
+  /* padding: 1rem; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 98%;
+
+  border: 1px solid white;
+}
+.imgtest {
+  width: 50px;
+  height: 50px;
+  padding: 1rem;
+}
+.icon-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  color: #333333;
+  background: #dddddd;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+}
+.icon-button--badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 25px;
+  height: 25px;
+  background: red;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 20px; /* Adds spacing between the title and search box */
+
+  border: 1px solid white;
+}
+
+.search-box {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  width: 200px; /* Set a fixed width for the input box */
+  /* margin-right: 10px; Adds spacing between the input box and the button */
+}
+
+.header-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.header-btn:hover {
+  background-color: #555;
+}
+.main {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+}
+.side-nav {
+  width: 20%;
+  height: 205%;
+  border: 1px solid red;
+}
+
+.main-content {
+  width: 100%;
+}
+
+.place {
+  display: flex;
+  flex-direction: row;
+}
+.sheet {
+  margin-left: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+}
+.card-container {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(o, o, o, o.2);
+}
+.card img {
+  margin-top: 30px;
+  max-width: 90%;
+  height: 200px;
+  border-radius: 5px 5px 0 0;
+}
+.card content {
+  padding: 20px;
+}
+.card content h2 {
+  color: #0078c2;
+  font-size: 28px;
+  margin-bottom: 6px;
+}
